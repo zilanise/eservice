@@ -29,12 +29,18 @@
                     <form action="{{ route('login') }}" method="post">
                         @csrf
                         <div class="form-group">
-                            <label>Username or email</label>
-                            <input name="email" type="email" id="email">
+                            <label>Email</label>
+                            <input name="email" type="email" id="email" value="{{ old('email') }}">
+                            @if($errors->has("email"))
+                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                            @endif
                         </div>
                         <div class="form-group">
                             <label>Password</label>
                             <input name="password" type="password">
+                            @if($errors->has("password"))
+                                <span class="text-danger">{{ $errors->first('password') }}</span>
+                            @endif
                         </div>
                         <div class="check-and-pass">
                             <div class="row align-items-center">

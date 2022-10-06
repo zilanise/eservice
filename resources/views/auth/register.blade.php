@@ -27,6 +27,7 @@
                 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
                     <div class="form-head">
                         <form action="{{ route('register') }}" method="post">
+                            @csrf
                             <div class="socila-login">
                                 <ul class="d-flex justify-content-between">
                                     <li class="mb-0"><a href="javascript:void(0)" class="facebook"><i class="lni lni-facebook-original"></i>Import
@@ -41,19 +42,31 @@
                             </div>
                             <div class="form-group">
                                 <label>Name</label>
-                                <input name="password" type="text">
+                                <input name="name" type="text" value="{{ old('name') }}">
+                                @if($errors->has("name"))
+                                <span class="text-danger">{{ $errors->first('name') }}</span>
+                            @endif
                             </div>
                             <div class="form-group">
                                 <label>Email</label>
-                                <input name="email" type="email">
+                                <input name="email" type="email" value="{{ old('email') }}">
+                                @if($errors->has("email"))
+                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                                @endif
                             </div>
                             <div class="form-group">
                                 <label>Password</label>
                                 <input name="password" type="password">
+                                @if($errors->has("email"))
+                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                                @endif
                             </div>
                             <div class="form-group">
                                 <label>Confirm Password</label>
-                                <input name="password" type="password">
+                                <input name="password_confirmation" type="password">
+                                @if($errors->has("email"))
+                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                                @endif
                             </div>
                             <div class="check-and-pass">
                                 <div class="row align-items-center">
