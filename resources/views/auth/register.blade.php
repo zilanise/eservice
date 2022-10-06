@@ -1,59 +1,80 @@
-<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot>
+@extends('layouts.guest')
+@section('title','Register')
 
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
-
-        <form method="POST" action="{{ route('register') }}">
-            @csrf
-
-            <!-- Name -->
-            <div>
-                <x-label for="name" :value="__('Name')" />
-
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+@section("content")
+<div class="breadcrumbs">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="breadcrumbs-content">
+                        <h1 class="page-title">Registration</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <ul class="breadcrumb-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Registration</li>
+                    </ul>
+                </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Email Address -->
-            <div class="mt-4">
-                <x-label for="email" :value="__('Email')" />
 
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+    <section class="login registration section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
+                    <div class="form-head">
+                        <form action="{{ route('register') }}" method="post">
+                            <div class="socila-login">
+                                <ul class="d-flex justify-content-between">
+                                    <li class="mb-0"><a href="javascript:void(0)" class="facebook"><i class="lni lni-facebook-original"></i>Import
+                                    From Facebook</a></li>
+                                    <li class="mb-0"><a href="javascript:void(0)" class="google"><i class="lni lni-google"></i>Import From Google
+                                    Plus</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="alt-option">
+                                <span>Or</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input name="password" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input name="email" type="email">
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input name="password" type="password">
+                            </div>
+                            <div class="form-group">
+                                <label>Confirm Password</label>
+                                <input name="password" type="password">
+                            </div>
+                            <div class="check-and-pass">
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input width-auto" id="exampleCheck1">
+                                            <label class="form-check-label">Agree to our <a href="javascript:void(0)">Terms and
+                                            Conditions</a></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <button type="submit" class="btn">Registration</button>
+                            </div>
+                            <p class="outer-link">Already have an account? <a href="{{ route('login') }}"> Login Now</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
             </div>
-
-            <!-- Password -->
-            <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
-
-                <x-input id="password" class="block mt-1 w-full"
-                                type="password"
-                                name="password"
-                                required autocomplete="new-password" />
-            </div>
-
-            <!-- Confirm Password -->
-            <div class="mt-4">
-                <x-label for="password_confirmation" :value="__('Confirm Password')" />
-
-                <x-input id="password_confirmation" class="block mt-1 w-full"
-                                type="password"
-                                name="password_confirmation" required />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-button class="ml-4">
-                    {{ __('Register') }}
-                </x-button>
-            </div>
-        </form>
-    </x-auth-card>
-</x-guest-layout>
+        </div>
+    </section>
+@endsection

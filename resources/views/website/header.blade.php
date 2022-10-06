@@ -5,11 +5,9 @@
                 <div class="nav-inner">
                     <nav class="navbar navbar-expand-lg">
                         <a class="navbar-brand" href="index.html">
-                            <img src="{{ asset('assets/theme/images/logo/logo.svg') }}" alt="Logo">
+                            <img src="assets/images/logo/logo.svg" alt="Logo">
                         </a>
-                        <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="toggler-icon"></span>
                             <span class="toggler-icon"></span>
                             <span class="toggler-icon"></span>
@@ -17,10 +15,7 @@
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                             <ul id="nav" class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a class="page-scroll active dd-menu collapsed" href="#"
-                                        data-bs-toggle="collapse" data-bs-target="#submenu-1-1"
-                                        aria-controls="navbarSupportedContent" aria-expanded="false"
-                                        aria-label="Toggle navigation">Home</a>
+                                    <a class="active dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Home</a>
                                     <ul class="sub-menu collapse" id="submenu-1-1">
                                         <li class="nav-item active"><a href="index.html">Home Default</a></li>
                                         <li class="nav-item"><a href="index2.html">Home Version 2</a></li>
@@ -28,13 +23,10 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="categories.html" aria-label="Toggle navigation">Categories</a>
+                                    <a href="category.html" aria-label="Toggle navigation">Categories</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll dd-menu collapsed" href="#"
-                                        data-bs-toggle="collapse" data-bs-target="#submenu-1-3"
-                                        aria-controls="navbarSupportedContent" aria-expanded="false"
-                                        aria-label="Toggle navigation">Listings</a>
+                                    <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-3" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Listings</a>
                                     <ul class="sub-menu collapse" id="submenu-1-3">
                                         <li class="nav-item"><a href="item-listing-grid.html">Ad Grid</a></li>
                                         <li class="nav-item"><a href="item-listing-list.html">Ad Listing</a></li>
@@ -42,10 +34,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll dd-menu collapsed" href="#"
-                                        data-bs-toggle="collapse" data-bs-target="#submenu-1-4"
-                                        aria-controls="navbarSupportedContent" aria-expanded="false"
-                                        aria-label="Toggle navigation">Pages</a>
+                                    <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Pages</a>
                                     <ul class="sub-menu mega-menu collapse" id="submenu-1-4">
                                         <li class="single-block">
                                             <ul>
@@ -87,19 +76,17 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll dd-menu collapsed" href="#"
-                                        data-bs-toggle="collapse" data-bs-target="#submenu-1-5"
-                                        aria-controls="navbarSupportedContent" aria-expanded="false"
-                                        aria-label="Toggle navigation">Blog</a>
+                                    <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-5" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Blog</a>
                                     <ul class="sub-menu collapse" id="submenu-1-5">
                                         <li class="nav-item"><a href="blog-grid-sidebar.html">Blog Grid Sidebar</a>
                                         </li>
-                                        <li class="nav-item"><a href="blog-single-sidebar.html">Blog Single</a></li>
-                                        <li class="nav-item"><a href="blog-single.html">Blog Single Sibebar</a></li>
+                                        <li class="nav-item"><a href="blog-single.html">Blog Single</a></li>
+                                        <li class="nav-item"><a href="blog-single-sidebar.html">Blog Single
+                                        Sibebar</a></li>
                                     </ul>
                                 </li>
                             </ul>
-                        </div> <!-- navbar collapse -->
+                        </div> 
                         <div class="login-button">
                             <ul>
                                 <li>
@@ -110,12 +97,12 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="button add-list-button">
-                            <a href="#" class="btn">Post an Ad</a>
+                        <div class="button header-button">
+                            <a href="post-item.html" class="btn">Post an Ad</a>
                         </div>
-                    </nav> <!-- navbar -->
+                    </nav> 
                 </div>
             </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
+        </div> 
+    </div> 
 </header>

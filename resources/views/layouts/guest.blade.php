@@ -28,7 +28,7 @@
         <link rel="stylesheet" href="{{ asset('assets/theme/css/animate.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/theme/css/tiny-slider.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/theme/css/glightbox.min.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/theme/css/main2.css') }}" />
+        <link rel="stylesheet" href="{{ asset('assets/theme/css/main.css') }}" />
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" /> -->
         
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
